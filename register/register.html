@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <style>
+      body {
+        background-image: url("https://img.freepik.com/free-vector/watercolor-galaxy-background_79603-2384.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      h1 {
+        text-align: center;
+      }
+      input {
+        border: none;
+        outline: none;
+        padding: 5px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px 20px 0px;
+      }
+      form {
+        background-color: white;
+        padding: 20px 20px;
+        border-radius: 40px;
+        box-shadow: 0 0 8px 2px #888;
+        background: rgba(225, 225, 225, 0.6);
+      }
+      .range {
+        background-color: rgb(142, 135, 135);
+        color: red;
+      }
+
+      td b a {
+        background-color: rgb(9, 92, 222);
+        border-radius: 200px;
+        color: rgb(243, 248, 248);
+        cursor: pointer;
+        padding: 8px 15px 8px 15px;
+      }
+
+      #submit:hover {
+        background-color: rgb(50, 50, 191);
+      }
+      .btn {
+        text-decoration: none;
+        color: white;
+      }
+      form {
+        background-color: #deba4c, rgba(206, 218, 129, 0.904);
+        box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25),
+          0px 10px 10px rgba(0, 0, 0, 0.22);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>Students Registration Form</h1>
+        <br />
+        <table>
+          <tr>
+            <th><label>Upload your image: </label><br /><br /></th>
+            <td><input type="file" name="image" required /><br /><br /></td>
+          </tr>
+          <tr>
+            <th><label for="Name">Name: </label><br /><br /></th>
+            <td>
+              <input
+                type="text"
+                placeholder="Enter Your Name"
+                required
+              /><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="password">Password: </label><br /><br /></th>
+            <td>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                required
+              /><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="emailid">E-Mail i'd: </label><br /><br /></th>
+            <td>
+              <input
+                type="email"
+                placeholder="Enter Email id"
+                required
+              /><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <th>Date Of Birth:</th>
+            <td><input type="date" name="date" /><br /><br /></td>
+          </tr>
+          <tr>
+            <th><span required>Age : </span><br /><br /></th>
+            <td>
+              <input
+                class="range"
+                type="range"
+                value="18"
+                min="18"
+                max="100"
+                oninput="num.value = this.value"
+              />
+              <output id="num">18</output><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <th><label required>Gender:</label><br /><br /></th>
+            <td>
+              <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="FeMale">Female</option>
+                <option>Others</option></select
+              ><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="marital status" required>Marital Status:</label
+              ><br /><br />
+            </th>
+            <td>
+              <input type="radio" name="radio" /> Unmarride
+              <input type="radio" name="radio" />Married<br /><br />
+            </td>
+          </tr>
+          <tr>
+            <th><label required>Phone Number: </label><br /><br /></th>
+            <td>
+              <input
+                type="number"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                placeholder="Enter Your PhoneNumber"
+                maxlength="10"
+                required
+              /><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <th><label required>Your Address: </label><br /><br /></th>
+
+            <td>
+              <textarea name="" id="" cols="20" rows="5"></textarea><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <b
+                ><a id="submit" class="btn" href="../index.html"
+                  >Register
+                </a></b
+              >
+              <br />
+              <br />
+            </td>
+            <td></td>
+          </tr>
+          <tr style="text-align: center">
+            <td colspan="2">
+              <label>Already Registered?</label>&nbsp;<a href="../index.html"
+                >Login</a
+              ><br />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <br />
+    </div>
+  </body>
+</html>

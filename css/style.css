@@ -1,0 +1,52 @@
+body {
+    background-image: url(https://www.teahub.io/photos/full/38-389869_girl-with-cycle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input{
+    outline: red;
+
+}
+.button {
+    color: white;
+    text-decoration: none;
+    background-color:#de4e22;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    cursor: pointer;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    width: 50px;
+    height: 30px;
+}
+
+table {
+    text-align: center;
+    color: rgb(14, 11, 11);
+    margin: 0px 308px 0px 0px;
+    border-radius: 10px;
+    box-shadow:0px 14px 28px rgba(0,0,0,0.25),
+               0px 10px 10px rgba(0,0,0,.22);
+}
+.middle {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+table {
+    background-color: #deba4c, rgba(206, 218, 129, 0.904);
+}
+input{
+    border: none;
+    background-color: rgb(216, 211, 211);
+    margin: 8px 0;
+    padding: 12px 15px;
+    width: 60%;
+}
+
+
